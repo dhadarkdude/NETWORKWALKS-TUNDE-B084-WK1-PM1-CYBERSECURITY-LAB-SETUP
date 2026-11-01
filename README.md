@@ -47,17 +47,17 @@ Installed VMware Workstation as the hypervisor on the Windows 10 Pro host.
 ### Step 2: Import Kali Linux
 Imported the Kali Linux VM and confirmed the desktop environment loads cleanly.
 
-![Kali Linux Desktop](kali-desktop.png)
+![Kali Linux Desktop](kali-desktop.jpg)
 
 ### Step 3: Configure the NAT Network
 VMware's default NAT network uses `vmnet8`, with the host side as the gateway. Set the gateway IP to **10.0.0.2** under NAT Settings, on the `10.0.0.0/24` subnet.
 
-![VMware NAT Settings](vmware-nat-settings.png)
+![VMware NAT Settings](vmware-nat-settings.jpg)
 
 ### Step 4: Assign Kali a Static IP
 Configured Kali's wired connection with a manual IPv4 address of **10.0.0.3**, netmask `/24`, and gateway **10.0.0.2**, matching the NAT settings from Step 3.
 
-![Kali Static IP Configuration](kali-static-ip.png)
+![Kali Static IP Configuration](kali-static-ip.jpg)
 
 ### Step 5: Verify Connectivity
 Confirmed Kali could reach the gateway and the internet from the assigned static IP.
